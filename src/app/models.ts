@@ -11,8 +11,8 @@ export interface Game {
     parent_platforms: Array<ParentPlatform>;
     publishers: Array<Publishers>;
     ratings: Array<Rating>;
-    screenshots: Array<Screenshots>;
-    trailers: Array<Trailer>;
+    screenshots: Screenshots;
+    trailers: Trailer;
   }
   
   export interface APIResponse<T> {
@@ -41,11 +41,9 @@ export interface Game {
   }
   
   interface Screenshots {
-    image: string;
+    results: Array<any>
   }
   
   interface Trailer {
-    data: {
-      max: string;
-    };
+    results:Array<any>
   }

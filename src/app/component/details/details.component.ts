@@ -29,15 +29,19 @@ export class DetailsComponent implements OnInit, OnDestroy {
   }
 
   getGameDetails(id: string): void {
-    // this.gameSub = this.httpService
-    //   .getGameDetails(id)
-    //   .subscribe((gameResp: Game) => {
-    //     this.game = gameResp;
+     this.gameSub = this.httpService
+       .getGameDetails(id)
+       .subscribe((gameResp: Game) => {
+         console.log('gameResp')
+         console.log(gameResp.screenshots)
+         console.log(gameResp)
+         this.game = gameResp;
+       
 
-    //     setTimeout(() => {
-    //       this.gameRating = this.game.metacritic;
-    //     }, 1000);
-    //   });
+         setTimeout(() => {
+           this.gameRating = this.game.metacritic;
+         }, 1000);
+       });
   }
 
   getColor(value: number): string {
