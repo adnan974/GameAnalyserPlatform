@@ -1,5 +1,11 @@
 # GameAnalyserPlatform
 
+## Decription
+
+This project was made to learn Angular. This is a website displaying games information provided by an public API. 
+
+## Generation
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
 
 ## Development server
