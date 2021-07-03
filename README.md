@@ -2,7 +2,7 @@
 
 ## Decription
 
-This project was made to learn Angular. This is a website displaying games information provided by an public API. 
+This project was made to learn Angular. This is a website displaying games information provided by a public API. 
 
 ## Generation
 
